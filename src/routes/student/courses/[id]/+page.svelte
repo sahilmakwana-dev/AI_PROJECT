@@ -130,7 +130,7 @@
 		<i class="ri-loader-4-line animate-spin text-5xl"></i>
 	</div>
 {:else if course}
-	<div class="flex flex-col lg:flex-row h-screen bg-slate-50 overflow-hidden animate-[fadeIn_0.5s_ease-out]">
+	<div class="flex flex-col lg:flex-row min-h-screen lg:h-screen bg-slate-50 overflow-y-auto lg:overflow-hidden animate-[fadeIn_0.5s_ease-out]">
 		<!-- Main Content Area -->
 		<div class="flex-1 flex flex-col min-w-0">
 			<!-- Topbar -->
@@ -155,7 +155,7 @@
 			</div>
 
 			<!-- Player Area -->
-			<div class="flex-1 bg-slate-900 flex items-center justify-center relative overflow-hidden">
+			<div class="h-60 sm:h-[450px] lg:h-auto lg:flex-1 bg-slate-900 flex items-center justify-center relative overflow-hidden">
 				{#if !activeMaterial}
 					<div class="text-center text-slate-400">
 						<i class="ri-movie-line text-6xl mb-4 block opacity-50"></i>

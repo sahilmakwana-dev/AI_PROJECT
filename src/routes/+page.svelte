@@ -71,8 +71,8 @@
 	<div class="absolute top-[-20%] left-[-10%] w-[500px] h-[500px] rounded-full bg-primary/10 blur-[120px] pointer-events-none"></div>
 	<div class="absolute bottom-[-20%] right-[-10%] w-[600px] h-[600px] rounded-full bg-secondary/10 blur-[120px] pointer-events-none"></div>
 
-	<div class="flex-1 flex flex-col justify-center px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24 z-10 w-full lg:w-1/2">
-		<div class="mx-auto w-full max-w-sm lg:w-[420px] backdrop-blur-xl bg-white/80 p-8 rounded-3xl border border-slate-200 shadow-xl shadow-slate-100/50">
+	<div class="flex-1 flex flex-col justify-center px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24 z-10 w-full lg:w-1/2 py-10">
+		<div class="mx-auto w-full max-w-sm lg:w-[420px] backdrop-blur-xl bg-white/80 p-6 sm:p-8 rounded-2xl sm:rounded-3xl border border-slate-200 shadow-xl shadow-slate-100/50">
 			<div class="flex items-center gap-3 mb-8">
 				<div class="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-md">
 					<svg class="w-7 h-7 text-white" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">

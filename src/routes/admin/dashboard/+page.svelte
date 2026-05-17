@@ -167,7 +167,7 @@
 	</div>
 
 	<!-- Custom Vanilla Tabs -->
-	<div class="flex border-b border-slate-200 gap-2 shrink-0">
+	<div class="flex border-b border-slate-200 gap-2 shrink-0 overflow-x-auto scrollbar-none whitespace-nowrap pb-0.5">
 		<button onclick={() => activeTab = 'overview'}
 			class="px-5 py-3 text-sm font-bold tracking-wide border-b-2 transition-all flex items-center gap-2
 			{activeTab === 'overview' ? 'text-rose-650 border-rose-600' : 'text-slate-500 border-transparent hover:text-slate-800'}">
