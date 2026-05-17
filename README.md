@@ -1,5 +1,8 @@
 # 🌟 AI Project Local Setup Guide
 
+> [!NOTE]
+> 👑 **Project Credits**: This application was proudly crafted and developed by **SHRADDHABA RANA**.
+
 A complete, beginner-friendly handbook to get this modern SvelteKit AI Web Application running on your local computer. No programming or prior technical experience required! Just follow these steps sequentially.
 
 ---
