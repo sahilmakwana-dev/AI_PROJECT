@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "supabase": {
+      "serverUrl": "https://mcp.supabase.com/mcp?project_ref=vpmqybyjyupmlxlmbfzf"
+    },
+    "svelte": {
+      "serverUrl": "https://mcp.svelte.dev/mcp"
+    }
+  }
+}

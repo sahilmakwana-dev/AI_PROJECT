@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en" class="light">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="text-scale" content="scale" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+		<style>
+			:root {
+				--color-primary: #3b82f6;
+				--color-secondary: #8b5cf6;
+				
+				/* Dark theme variables */
+				--bg-dark: #0f172a;
+				--bg-panel: #1e293b;
+				--text-main: #f8fafc;
+				--text-muted: #94a3b8;
+				--border-main: rgba(51, 65, 85, 0.5);
+			}
+
+			html.light {
+				/* Premium Light theme variables */
+				--bg-dark: #f8fafc;
+				--bg-panel: #ffffff;
+				--text-main: #0f172a;
+				--text-muted: #475569;
+				--border-main: rgba(203, 213, 225, 0.6);
+			}
+
+			body { 
+				font-family: 'Outfit', sans-serif; 
+				background-color: var(--bg-dark); 
+				color: var(--text-main); 
+				transition: background-color 0.3s ease, color 0.3s ease; 
+			}
+
+			/* Global Light Theme Overrides for Dark Tailwind Classes */
+			html.light .text-white { color: #0f172a !important; }
+			html.light .text-slate-100 { color: #0f172a !important; }
+			html.light .text-slate-200 { color: #1e293b !important; }
+			html.light .text-slate-300 { color: #334155 !important; }
+			html.light .text-slate-400 { color: #475569 !important; }
+			html.light .text-slate-500 { color: #64748b !important; }
+
+			html.light .bg-slate-900 { background-color: #f1f5f9 !important; }
+			html.light .bg-slate-800 { background-color: #e2e8f0 !important; }
+			html.light .bg-slate-800/50 { background-color: rgba(226, 232, 240, 0.5) !important; }
+			html.light .bg-slate-950/70 { background-color: rgba(241, 245, 249, 0.7) !important; }
+			html.light .bg-panel/40 { background-color: rgba(255, 255, 255, 0.8) !important; }
+			html.light .bg-slate-900/50 { background-color: rgba(241, 245, 249, 0.5) !important; }
+			html.light .bg-slate-900/60 { background-color: rgba(241, 245, 249, 0.6) !important; }
+			html.light .bg-slate-800/40 { background-color: rgba(226, 232, 240, 0.4) !important; }
+			html.light .bg-slate-800/20 { background-color: rgba(226, 232, 240, 0.2) !important; }
+			html.light .bg-slate-800/30 { background-color: rgba(226, 232, 240, 0.3) !important; }
+			html.light .hover\:bg-slate-800:hover { background-color: #f1f5f9 !important; }
+			html.light .hover\:bg-slate-700:hover { background-color: #e2e8f0 !important; }
+			html.light .bg-slate-850 { background-color: #e2e8f0 !important; }
+			html.light .bg-slate-950 { background-color: #f8fafc !important; }
+
+			html.light .border-slate-700 { border-color: #cbd5e1 !important; }
+			html.light .border-slate-700/50 { border-color: rgba(203, 213, 225, 0.5) !important; }
+			html.light .border-slate-800 { border-color: #e2e8f0 !important; }
+			html.light .border-slate-850 { border-color: #cbd5e1 !important; }
+			html.light .border-slate-600 { border-color: #cbd5e1 !important; }
+			html.light .divide-slate-850 > :not([hidden]) ~ :not([hidden]) { border-color: #e2e8f0 !important; }
+			html.light .divide-slate-800 > :not([hidden]) ~ :not([hidden]) { border-color: #e2e8f0 !important; }
+
+			/* Text and input overrides */
+			html.light input, html.light select, html.light textarea {
+				background-color: #ffffff !important;
+				color: #0f172a !important;
+				border-color: #cbd5e1 !important;
+			}
+			html.light input::placeholder, html.light textarea::placeholder {
+				color: #94a3b8 !important;
+			}
+
+			/* Specific panels */
+			html.light .bg-panel { background-color: #ffffff !important; }
+			html.light .bg-dark { background-color: #f8fafc !important; }
+		</style>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						fontFamily: { sans: ['Outfit', 'sans-serif'] },
+						colors: { 
+							primary: 'var(--color-primary)', 
+							secondary: 'var(--color-secondary)', 
+							dark: 'var(--bg-dark)', 
+							panel: 'var(--bg-panel)' 
+						},
+						keyframes: { fadeIn: { '0%': { opacity: '0', transform: 'translateY(10px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } } }
+					}
+				}
+			}
+		</script>
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>
