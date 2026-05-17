@@ -164,6 +164,9 @@
 				</form>
 			</div>
 		</div>
+		<div class="mt-6 text-center text-xs text-slate-400 font-bold tracking-widest uppercase animate-pulse">
+			Developed with 💜 by <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary font-black">SHRADDHABA RANA</span>
+		</div>
 	</div>
 	
 	<div class="hidden lg:block relative w-1/2">

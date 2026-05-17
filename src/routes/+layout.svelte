@@ -145,6 +145,11 @@
 						<i class="ri-logout-circle-line"></i> Logout
 					</button>
 				</div>
+				<!-- Credits Badge -->
+				<div class="p-3 rounded-xl bg-gradient-to-br from-primary/5 to-secondary/5 border border-primary/10 text-center shadow-sm">
+					<p class="text-[10px] font-bold text-slate-450 uppercase tracking-widest">Created & Developed by</p>
+					<p class="text-xs font-black text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary mt-1 tracking-wide">SHRADDHABA RANA</p>
+				</div>
 			</div>
 		</aside>
 		
